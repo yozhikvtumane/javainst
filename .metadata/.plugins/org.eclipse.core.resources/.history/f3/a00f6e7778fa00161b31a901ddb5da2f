@@ -1,0 +1,11 @@
+package fraction.app;
+
+import zlomky.Fraction;
+
+public class FractionMain {
+	
+	public static void main(String[] args) {
+		Fraction f1 = new Fraction(1, 2);
+		Sraction f2 = new Fraction(2, 5);
+	}
+}

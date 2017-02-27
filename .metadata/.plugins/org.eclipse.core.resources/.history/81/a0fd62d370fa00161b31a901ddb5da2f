@@ -1,0 +1,15 @@
+package konzult;
+
+public class Robot {
+	
+	public String mojeJmeno;
+	
+	public void pozdrav() {
+		System.out.println("Ahoj Vse! jmenuju se" + mojeJmeno);
+	}
+	
+	public void pozdravNekoho(String jmeno, String prijmeni) {
+		System.out.println("Ahoj" + " " + jmeno + " " + prijmeni);
+	}
+
+}

@@ -1,0 +1,12 @@
+package konzult;
+
+public class Spousteni {
+	
+	public static void main(String[] args) {
+		Robot r = new Robot("Robot Karel");
+		r.pozdrav();
+		r.pozdravNekoho("Pavel" , "Kriz");
+		
+		Robot r2 = new Robot("Robot Anton");
+	}
+}

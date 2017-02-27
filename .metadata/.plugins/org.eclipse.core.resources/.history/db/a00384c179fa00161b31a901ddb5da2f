@@ -1,0 +1,23 @@
+package fraction.app;
+
+import javax.swing.JOptionPane;
+
+import zlomky.Fraction;
+
+public class FractionMain {
+	
+	public static void main(String[] args) {
+		Fraction f1 = new Fraction(1, 2);
+		System.out.println(f1);
+		try	{
+			String citatel = JOptionPane.showInputDialog("adasd");
+			String jmenovatel = JOptionPane.showInputDialog("adas");
+			
+			Fraction f2 = new Fraction(2, 0);
+			System.out.println(f2);
+		} catch (IlligalArgumentExeption e) {
+			// TODO: handle exception
+			
+		}
+	}
+}

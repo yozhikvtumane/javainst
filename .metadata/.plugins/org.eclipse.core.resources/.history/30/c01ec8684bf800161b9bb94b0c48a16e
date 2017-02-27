@@ -1,0 +1,47 @@
+package zlomky;
+
+public class Fraction {
+
+	private int numerator;
+	private int denonimator;
+	
+	public Fraction() {
+		
+	}
+	
+	public Fraction( int numerator, int denonimator) {
+		this.numerator = numerator;
+		this.denonimator = denonimator;
+	}
+	
+	public int getNumerator (){
+		return numerator;
+	}
+
+	public void setNumerator(int numerator) {
+		this.numerator = numerator;
+	}
+
+	public int getDenonimator (){
+		return denonimator;
+	}
+
+	public void setDenonimator(int denonimator) {
+		if (denonimator == 0) {
+			//chyba
+			throw new IllegalArgumentException("Denominater must be non-zero");
+			//utece z metody  pryc
+		}
+		
+		this.denonimator = denonimator;
+	}
+
+	public Fraction multiply(Fraction f2) {
+		return new Fraction(numerator * f2.numerator, denonimator * f2.denonimator);
+	}
+
+	public String toString() {
+		return numerator + "/" + denonimator;
+	}
+}
+

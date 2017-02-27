@@ -1,0 +1,28 @@
+package konzult;
+
+public class Robot {
+	
+	private String mojeJmeno;
+	
+	public Robot(String mojeJmeno) {
+		this.mojeJmeno = mojeJmeno; //konstruktor
+	}
+	
+	public void pozdrav() {
+		System.out.println("Ahoj Vse! jmenuju se " + mojeJmeno);
+	}
+	
+	public void pozdravNekoho(String jmeno, String prijmeni) {
+		System.out.println("Ahoj" + " " + jmeno + " " + prijmeni);
+	}
+	
+	public int sectiDveCisla(int a, int b) {
+		int soucet = a + b;
+		return soucet;
+	}
+	
+	public int void sectiDveCislaAVityskni(int a, int b) {
+		int soucet2 = a + b;
+		System.out.println(soucet2);
+	}
+}
